@@ -1,5 +1,5 @@
 %define module_name pcsc-perl
-%define version 1.4.2
+%define version 1.4.6
 %define release %mkrel 1
 
 Summary:	Perl interface to the PC/SC smart card library
@@ -7,7 +7,7 @@ Name:		perl-%{module_name}
 Version:	%{version}
 Release:	%{release}
 URL:		http://search.cpan.org/dist/%{module_name}/
-Source0:	http://search.cpan.org/CPAN/authors/id/W/WH/WHOM/%{module_name}-%{version}.tar.gz
+Source0:	http://search.cpan.org/CPAN/authors/id/W/WH/WHOM/%{module_name}-%{version}.tar.bz2
 License:	GPL
 Group:		Development/Perl
 BuildRequires:	perl-devel >= 5.8.0
