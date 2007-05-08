@@ -1,6 +1,6 @@
 %define module_name pcsc-perl
 %define version 1.4.6
-%define release %mkrel 1
+%define release %mkrel 2
 
 Summary:	Perl interface to the PC/SC smart card library
 Name:		perl-%{module_name}
@@ -44,5 +44,4 @@ rm -rf $RPM_BUILD_ROOT
 %{_mandir}/*/*
 %{perl_vendorlib}/*/Chipcard
 %{perl_vendorlib}/*/auto/Chipcard
-
 
