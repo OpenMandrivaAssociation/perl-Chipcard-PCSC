@@ -12,6 +12,7 @@ License:	GPL
 Group:		Development/Perl
 BuildRequires:	perl-devel >= 5.8.0
 BuildRequires:  libpcsclite-devel
+BuildRoot:	%{_tmppath}/%{name}-buildroot
 
 %description
 This package contains a Perl wrapper to the PC/SC smartcard library
