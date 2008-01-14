@@ -1,6 +1,6 @@
 %define module_name pcsc-perl
 %define version 1.4.6
-%define release %mkrel 3
+%define release %mkrel 4
 
 Summary:	Perl interface to the PC/SC smart card library
 Name:		perl-%{module_name}
