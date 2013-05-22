@@ -1,11 +1,10 @@
 %define module_name pcsc-perl
 %define version 1.4.11
-%define release 2
 
 Summary:	Perl interface to the PC/SC smart card library
 Name:		perl-%{module_name}
 Version:	%{version}
-Release:	%{release}
+Release:	3
 URL:		http://ludovic.rousseau.free.fr/softwares/pcsc-perl/
 Source0:	http://ludovic.rousseau.free.fr/softwares/pcsc-perl/%{module_name}-%{version}.tar.bz2
 
