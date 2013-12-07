@@ -4,7 +4,7 @@
 Summary:	Perl interface to the PC/SC smart card library
 Name:		perl-%{modname}
 Version:	%{version}
-Release:	6
+Release:	7
 License:	GPLv2
 Group:		Development/Perl
 Url:		http://ludovic.rousseau.free.fr/softwares/pcsc-perl/
