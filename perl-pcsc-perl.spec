@@ -3,12 +3,12 @@
 
 Summary:	Perl interface to the PC/SC smart card library
 Name:		perl-%{modname}
-Version:	%{version}
-Release:	7
+Version:	%perl_convert_version 1.4.13
+Release:	1
 License:	GPLv2
 Group:		Development/Perl
 Url:		http://ludovic.rousseau.free.fr/softwares/pcsc-perl/
-Source0:	http://ludovic.rousseau.free.fr/softwares/pcsc-perl/%{modname}-%{version}.tar.bz2
+Source0:	http://ludovic.rousseau.free.fr/softwares/pcsc-perl/pcsc-perl-%{version}.tar.bz2
 BuildRequires:	perl-devel >= 5.8.0
 BuildRequires:	pkgconfig(libpcsclite)
 
@@ -37,4 +37,5 @@ find -name \*.pm | xargs chmod 644
 %{perl_vendorlib}/*/Chipcard
 %{perl_vendorlib}/*/auto/Chipcard
 %{_mandir}/man3/*
+
 
