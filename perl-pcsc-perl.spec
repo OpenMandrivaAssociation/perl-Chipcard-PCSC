@@ -1,10 +1,10 @@
 %define modname pcsc-perl
-%define version 1.4.11
+%define version 1.4.14
 
 Summary:	Perl interface to the PC/SC smart card library
 Name:		perl-%{modname}
-Version:	%perl_convert_version 1.4.13
-Release:	7
+Version:	%perl_convert_version 1.4.14
+Release:	1
 License:	GPLv2
 Group:		Development/Perl
 Url:		http://ludovic.rousseau.free.fr/softwares/pcsc-perl/
@@ -21,7 +21,7 @@ This package contains a Perl wrapper to the PC/SC smartcard library
 find -name \*.pm | xargs chmod 644
 
 %build
-%__perl Makefile.PL INSTALLDIRS=vendor
+perl Makefile.PL INSTALLDIRS=vendor
 %make
 
 %check
@@ -37,5 +37,3 @@ find -name \*.pm | xargs chmod 644
 %{perl_vendorlib}/*/Chipcard
 %{perl_vendorlib}/*/auto/Chipcard
 %{_mandir}/man3/*
-
-
