@@ -36,5 +36,5 @@ perl Makefile.PL INSTALLDIRS=vendor OPTIMIZE="%{optflags}"
 %files
 %doc LICENCE README* examples Changelog
 %{perl_vendorarch}/*/Chipcard
-%{perl_vendorarch}/*/auto/Chipcard
+%{perl_vendorarch}/auto/Chipcard
 %{_mandir}/man3/*
