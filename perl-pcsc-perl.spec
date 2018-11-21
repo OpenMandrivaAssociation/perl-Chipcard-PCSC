@@ -18,12 +18,12 @@ This package contains a Perl wrapper to the PC/SC smartcard library
 (pcsc-lite) from MUSCLE together with some small examples.
 
 %prep
-%setup -qn %{modname}-%{version}
+%autosetup -n %{modname}-%{version} -p1
 find -name \*.pm | xargs chmod 644
 
 %build
-perl Makefile.PL INSTALLDIRS=vendor
-%make
+perl Makefile.PL INSTALLDIRS=vendor OPTIMIZE="%{optflags}"
+%make_build
 
 %check
 # this needs a smart card reader configured and with a
@@ -31,10 +31,10 @@ perl Makefile.PL INSTALLDIRS=vendor
 #make test
 
 %install
-%makeinstall_std
+%make_install
 
 %files
 %doc LICENCE README* examples Changelog
-%{perl_vendorlib}/*/Chipcard
-%{perl_vendorlib}/*/auto/Chipcard
+%{perl_vendorarch}/*/Chipcard
+%{perl_vendorarch}/*/auto/Chipcard
 %{_mandir}/man3/*
