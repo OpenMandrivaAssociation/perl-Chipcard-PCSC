@@ -1,11 +1,12 @@
 %define modname pcsc-perl
 %define version 1.4.14
 %define _disable_lto 1
+%{?perl_default_filter}
 
 Summary:	Perl interface to the PC/SC smart card library
 Name:		perl-%{modname}
 Version:	%perl_convert_version 1.4.14
-Release:	4
+Release:	5
 License:	GPLv2
 Group:		Development/Perl
 Url:		http://ludovic.rousseau.free.fr/softwares/pcsc-perl/
