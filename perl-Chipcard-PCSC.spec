@@ -3,7 +3,7 @@
 Summary:	Perl interface to the PC/SC smart card library
 Name:		perl-%{modname}
 Version:	1.4.16
-Release:	2
+Release:	3
 License:	GPLv2
 Group:		Development/Perl
 Url:		https://pcsc-perl.apdu.fr/
