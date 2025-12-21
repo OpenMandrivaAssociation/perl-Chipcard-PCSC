@@ -8,6 +8,7 @@ License:	GPLv2
 Group:		Development/Perl
 Url:		https://pcsc-perl.apdu.fr/
 Source0:	https://pcsc-perl.apdu.fr/%{modname}-v%{version}.tar.gz
+BuildRequires:	make
 BuildRequires:	perl-devel >= 5.8.0
 BuildRequires:	pkgconfig(libpcsclite)
 %rename perl-pcsc-perl
